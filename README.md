@@ -1,8 +1,6 @@
 # About
 This is a weather forecast website that provides international and local weather forecasts daily. The basic information includes weather, wind speed, location(city), country , and min/max temperatures. It works for both local and international locations.
 
-# URL: 
-
 # Illustration:
 
 ![ezgif-3-2618b0452b](https://user-images.githubusercontent.com/81440768/180048677-7a14bf78-1952-418e-a262-33ae7a4aff16.gif)
