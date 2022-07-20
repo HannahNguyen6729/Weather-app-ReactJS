@@ -1,3 +1,16 @@
+This is a weather forecast website that provides international and local weather forecasts daily. The basic information includes weather, wind speed, location(city), country , and min/max temperatures. It works for both local and international locations.
+
+URL: 
+
+Illustration:
+![ezgif-3-2618b0452b](https://user-images.githubusercontent.com/81440768/180048677-7a14bf78-1952-418e-a262-33ae7a4aff16.gif)
+
+![292453711_876122607111853_9188839955757249389_n](https://user-images.githubusercontent.com/81440768/180048795-d42613da-cf67-49a1-97cf-d83ff87a6218.png)
+![288198879_593290548812355_5575432869851618990_n](https://user-images.githubusercontent.com/81440768/180048832-ad7e1d0c-bdd2-4abc-9738-c7803170aefa.png)
+![292369007_2479550825520286_1249207495506473968_n](https://user-images.githubusercontent.com/81440768/180048852-1d773bdd-39e6-4e14-b6cc-08b411c15283.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
