@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { ERROR_UPDATE_LOCATION, GET_WEATHER_DATA, SUCCESS_UPDATE_LOCATION } from "../reduxWeather/type/ActionType";
 
 
-const apiKey='iG8wTuPLmZ1AQ58DBG4UhgBiTJ5JolG1'
+const apiKey='zWGAkz0odLqs031dnemoPBcuDOZDPNGi'
 export default function InputForm() {
     const [search, setSearch]= useState('');
     const [city, setCity]= useState('');
