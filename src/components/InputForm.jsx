@@ -5,7 +5,8 @@ import { useDispatch } from 'react-redux'
 import { useEffect } from "react";
 import { ERROR_UPDATE_LOCATION, GET_WEATHER_DATA, SUCCESS_UPDATE_LOCATION } from "../reduxWeather/type/ActionType";
 
-const apiKey='AMnyxAGcn2GrUlNQKedeKrMuFIcms2zC'
+
+const apiKey='iG8wTuPLmZ1AQ58DBG4UhgBiTJ5JolG1'
 export default function InputForm() {
     const [search, setSearch]= useState('');
     const [city, setCity]= useState('');
@@ -34,7 +35,7 @@ export default function InputForm() {
         try{
           let res = await Axios({
             method: 'GET',
-            url:`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${apiKey}&q=${latitude}%2C${longitude}&language=en-us`
+            url:`https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${apiKey}&q=${latitude}%2C${longitude}&language=en-us`
           })
          if(res.status === 200){
             let currentCity = res.data?.EnglishName;
@@ -52,7 +53,7 @@ export default function InputForm() {
           try{
               let result = await Axios({
                   method: 'GET',
-                  url:`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${city}&language=en-us`
+                  url:`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${city}&language=en-us`
               })
               if(result.status===200){
                 let locationKey = result.data[0]?.Key;
@@ -60,7 +61,7 @@ export default function InputForm() {
                   if(locationKey){
                     let weatherDetailRes = await Axios({
                         method: 'GET',
-                        url:`http://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey}?apikey=${apiKey}&language=en-us&details=true&metric=true`,
+                        url:`https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey}?apikey=${apiKey}&language=en-us&details=true&metric=true`,
                     })
                     let res= weatherDetailRes.data?.DailyForecasts[0];
                       dispatch({
